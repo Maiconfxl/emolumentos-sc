@@ -1,6 +1,5 @@
-function calcular() {
+function calcular1() {
   var valor = parseFloat(document.getElementById("valor").value)
-
   var limiteInferior = 137347.32
   var porcentagem1 = 0.015
   var porcentagem2 = 0.03
@@ -60,15 +59,21 @@ function calcular() {
     resultado2 = 2497.36
   } else if (valor >= 206340) resultado2 = 2600.22
 
-  /*Resultado do ITBI*/
+  // Verifica se a opção de dividir por 2 está selecionada
+  var opcaoSelecionada = document.getElementById("opcaoDivisao").value
+  if (opcaoSelecionada === "dividir") {
+    resultado /= 2 // Divide por 2
+  }
+
+  // Resultado do ITBI
   document.getElementById("calculoResult").innerHTML =
     "R$" + resultado.toFixed(2)
 
-  /* Resultado da tabela de SC*/
+  // Resultado da tabela de SC
   document.getElementById("calculoResult2").innerHTML =
     "R$" + resultado2.toFixed(2)
 
-  /* Resultado final*/
+  // Resultado final
   document.getElementById("calculoResult3").innerHTML =
     "R$" + (resultado + resultado2).toFixed(2)
 }

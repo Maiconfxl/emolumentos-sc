@@ -8,6 +8,12 @@
   </head>
   <body>
     <div>
+      <label for="opcaoDivisao">Selecione uma opção:</label>
+      <select id="opcaoDivisao">
+        <option value="naoDividir">Urbano</option>
+        <option value="dividir">Rural</option>
+      </select>
+
       <table>
         <tr>
           <th>Valor</th>
@@ -23,8 +29,7 @@
           <td id="calculoResult3"></td>
         </tr>
       </table>
-
-      <button onclick="calcular()">Calcular</button>
+      <button onclick="calcular1()">Calcular</button>
     </div>
     <script src="./script.js"></script>
   </body>
