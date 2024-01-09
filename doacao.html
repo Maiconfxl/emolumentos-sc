@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doação</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="top">
+      <p>Doação</p>
+      <label for="opcaoDivisao">Selecione opção:</label>
+      <select id="opcaoDivisao">
+        <option value="naoDividir">Doação Simples</option>
+        <option value="dividir">Doação com Reserve de Usufruto</option>
+      </select>
+
+      <div class="tab">
+        <table>
+          <tr>
+            <th>Valor</th>
+            <th>ITCMD</th>
+            <th>Emolumentos</th>
+            <th>Total</th>
+          </tr>
+
+          <tr>
+            <td><input type="text" id="valor" /></td>
+            <td id="calcdonation"></td>
+            <td id="calcdonation2"></td>
+            <td id="calcdonation3"></td>
+          </tr>
+        </table>
+      </div>
+      <div class="boton">
+        <button onclick="calcularITCMD()">Calcular</button>
+      </div>
+    </div>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Exo+2:ital@1&display=swap");
+    </style>
+    <script src="./scriptdonation.js"></script>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2125012810992891"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
