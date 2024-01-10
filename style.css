@@ -19,7 +19,7 @@ body {
   background: linear-gradient(to top right, #020202, #5b97e6) no-repeat;
 }
 
-.doc1,
+
 .tab {
   width: 100%;
   max-width: 588px;
@@ -28,6 +28,7 @@ body {
   font-weight: 500;
   line-height: 24px;
   margin-top: 8px;
+ 
 }
 
 .top {
@@ -40,21 +41,26 @@ body {
 
 table {
   border-collapse: collapse;
-  width: 100%;
-  font-weight: normal;
-  border-radius: 8px;
+  width: 57vh;
+  font-family: "Exo 2", sans-serif;
 }
+
 
 th,
 td {
-  border: 1px solid black;
+  border: 1px solid #022f69;
   text-align: center;
   padding: 8px;
   margin: 0 auto 8px;
   font-weight: 500;
   line-height: 24px;
+  color: #022f69;
+  
 }
-
+input {
+  border-radius: 5px;
+  border-color: #022f69;
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -83,4 +89,25 @@ button {
   border-radius: 10px;
   border-color: #c1d5f0;
   background: #fdfeffe7;
+  color:#022f69;
+}
+
+h2 {
+  color: #022f69;
+  margin: 10px
+}
+.doc1{
+  margin: 10px 20px 50px;
+  color: #022f69;
+  font-size: 18px;
+}
+option {
+  font-family: "Exo 2", sans-serif;
+  color: #022f69;
+}
+select {
+  font-family: "Exo 2", sans-serif;
+  color: #022f69;
+  border-color: #022f69;
+  border-radius: 5px;
 }
