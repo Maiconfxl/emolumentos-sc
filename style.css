@@ -15,16 +15,8 @@ body {
 
 body {
   margin: 56px auto 0;
-  background: linear-gradient(to top right, #020202, #5b97e6) no-repeat;
   max-width: 588px;
-}
-
-.top {
-  background: #fdfeffe7;
-  height: 80vh;
-  width: 100%;
-  overflow: hidden;
-  text-align: center;
+  background: linear-gradient(to top right, #020202, #5b97e6) no-repeat;
 }
 
 .doc1,
@@ -36,6 +28,14 @@ body {
   font-weight: 500;
   line-height: 24px;
   margin-top: 8px;
+}
+
+.top {
+  background: #fdfeffe7;
+  height: 80vh;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 10px;
 }
 
 table {
@@ -56,11 +56,31 @@ td {
 }
 
 .container {
-  width: 100%;
-  max-width: 588px;
-  margin: 0 0 56px;
-  padding: 0 24px;
-  font-weight: 500;
-  line-height: 24px;
-  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.emolumentos {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 200px;
+  color: #022f69;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+button {
+  font-size: 18px;
+  padding: 5px 10px;
+  margin: 50px 200px 0;
+  border-radius: 10px;
+  border-color: #c1d5f0;
+  background: #fdfeffe7;
 }

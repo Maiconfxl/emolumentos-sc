@@ -10,14 +10,20 @@
     </style>
   </head>
   <body>
-    <div class="top">
-      <p>Emolumentos</p>
-      <button onclick="redirecionarParaCompraeVenda()">Compra e Venda</button>
+    <div class="conteiner">
+      <div class="buttons">
+        <div class="top">
+          <div class="emolumentos">Emolumentos</div>
+          <button onclick="redirecionarParaCompraeVenda()" id="buy">
+            Compra e Venda
+          </button>
 
-      <button onclick="redirecionarParaDoacao()">Doação</button>
+          <button onclick="redirecionarParaDoacao()" id="donation">
+            Doação
+          </button>
+        </div>
+      </div>
     </div>
-
-    <!-- Mova a inclusão do script para após os botões -->
     <script src="./script.js"></script>
     <script
       async
