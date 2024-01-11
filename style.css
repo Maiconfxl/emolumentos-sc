@@ -19,7 +19,6 @@ body {
   background: linear-gradient(to top right, #020202, #5b97e6) no-repeat;
 }
 
-
 .tab {
   width: 100%;
   max-width: 588px;
@@ -28,7 +27,6 @@ body {
   font-weight: 500;
   line-height: 24px;
   margin-top: 8px;
- 
 }
 
 .top {
@@ -41,10 +39,9 @@ body {
 
 table {
   border-collapse: collapse;
-  width: 57vh;
+  width: 100%;
   font-family: "Exo 2", sans-serif;
 }
-
 
 th,
 td {
@@ -55,7 +52,6 @@ td {
   font-weight: 500;
   line-height: 24px;
   color: #022f69;
-  
 }
 input {
   border-radius: 5px;
@@ -89,14 +85,14 @@ button {
   border-radius: 10px;
   border-color: #c1d5f0;
   background: #fdfeffe7;
-  color:#022f69;
+  color: #022f69;
 }
 
 h2 {
   color: #022f69;
-  margin: 10px
+  margin: 10px;
 }
-.doc1{
+.doc1 {
   margin: 10px 20px 50px;
   color: #022f69;
   font-size: 18px;
@@ -111,3 +107,4 @@ select {
   border-color: #022f69;
   border-radius: 5px;
 }
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital@1&display=swap");
