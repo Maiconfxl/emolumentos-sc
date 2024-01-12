@@ -1,7 +1,6 @@
 function calcularITCMD() {
   var valor = parseFloat(document.getElementById("valor").value)
   var resultado
-  var resultado2
 
   var opcaoSelecionada = document.getElementById("opcaoDivisao").value
   if (opcaoSelecionada === "dividir") {
@@ -18,6 +17,14 @@ function calcularITCMD() {
     resultado = (valor - 50000.0) * 0.05 + 900 + 200
   } else if (valor >= 150000.01)
     resultado = (valor - 150000.0) * 0.07 + 200 + 900 + 5000
+
+  document.getElementById("calcdonation").innerHTML =
+    "R$ " + resultado.toFixed(2)
+}
+
+function calcularEmolumentos() {
+  var valor = parseFloat(document.getElementById("valor").value)
+  var resultado2
 
   //Cálculo da Tabela de SC 2024
   if (valor >= 0 && valor <= 12581) {
@@ -64,12 +71,27 @@ function calcularITCMD() {
     resultado2 = 2497.36
   } else if (valor >= 206340) resultado2 = 2600.22
 
-  document.getElementById("calcdonation").innerHTML =
-    "R$ " + resultado.toFixed(2)
-
   document.getElementById("calcdonation2").innerHTML =
     "R$" + resultado2.toFixed(2)
+}
 
+function calcularTudo() {
+  // Chama as duas funções para calcular ITCMD e Emolumentos
+  calcularITCMD()
+  calcularEmolumentos()
+
+  // Obtém os resultados das duas funções
+  var resultadoITCMD = parseFloat(
+    document.getElementById("calcdonation").innerText.replace("R$", "")
+  )
+  var resultadoEmolumentos = parseFloat(
+    document.getElementById("calcdonation2").innerText.replace("R$", "")
+  )
+
+  // Soma os resultados
+  var resultadoTotal = resultadoITCMD + resultadoEmolumentos
+
+  // Exibe o resultado total na página
   document.getElementById("calcdonation3").innerHTML =
-    "R$" + (resultado + resultado2).toFixed(2)
+    "R$" + resultadoTotal.toFixed(2)
 }
