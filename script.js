@@ -4,3 +4,12 @@ function redirecionarParaCompraeVenda() {
 function redirecionarParaDoacao() {
   window.location.href = "doacao.html"
 }
+function redirecionarParaImposto() {
+  window.location.href = "tax.html"
+}
+function redirecionarParaITCMD() {
+  window.location.href = "itcmd.html"
+}
+function redirecionarParaITBI() {
+  window.location.href = "itbi.html"
+}
