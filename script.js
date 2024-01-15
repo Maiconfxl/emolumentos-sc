@@ -13,3 +13,6 @@ function redirecionarParaITCMD() {
 function redirecionarParaITBI() {
   window.location.href = "itbi.html"
 }
+function redirecionarParaSobre() {
+  window.location.href = "sobre.html"
+}

@@ -87,10 +87,32 @@ button {
   background: #fdfeffe7;
   color: #022f69;
 }
+h1 {
+  color: #022f69;
+  margin: 10px;
+}
+.welcome {
+  color: #022f69;
+  margin: 30px;
+  text-align: justify;
+}
+
+p {
+  color: #fdfeff71;
+  margin: 5px 0;
+}
 
 h2 {
   color: #022f69;
-  margin: 10px;
+  margin: 5px;
+}
+h3 {
+  color: #fdfeff71;
+  margin: 5px 0px;
+}
+h4 {
+  color: #fdfeff71;
+  margin: 5px 0px;
 }
 .doc1 {
   margin: 10px 20px 50px;
