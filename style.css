@@ -87,6 +87,10 @@ button {
   background: #fdfeffe7;
   color: #022f69;
 }
+
+#about {
+  margin: 350px 500px;
+}
 h1 {
   color: #022f69;
   margin: 10px;
@@ -129,4 +133,10 @@ select {
   border-color: #022f69;
   border-radius: 5px;
 }
+
+#social-links {
+  display: flex;
+  padding: 100px;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:ital@1&display=swap");
