@@ -3,8 +3,6 @@
 }
 
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -14,27 +12,27 @@ body {
 }
 
 body {
-  margin: 56px auto 0;
-  max-width: 588px;
   background: linear-gradient(to top right, #020202, #5b97e6) no-repeat;
 }
 
-.tab {
-  width: 100%;
-  max-width: 588px;
-  margin: 0 0 56px;
-  padding: 0 24px;
-  font-weight: 500;
-  line-height: 24px;
-  margin-top: 8px;
-}
-
 .top {
+  margin: 56px auto 0;
+  max-width: 800px;
   background: #fdfeffe7;
   height: 80vh;
   overflow: hidden;
   text-align: center;
   border-radius: 10px;
+}
+
+.tab {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 0 56px;
+  padding: 0 24px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 8px;
 }
 
 table {
@@ -89,7 +87,7 @@ button {
 }
 
 #about {
-  margin: 350px 500px;
+  margin: 375px 700px;
 }
 h1 {
   color: #022f69;
@@ -134,9 +132,11 @@ select {
   border-radius: 5px;
 }
 
-#social-links {
-  display: flex;
-  padding: 100px;
+.social-links {
+  margin: 0;
+  max-width: 18px;
+  background-color: #fafafa;
+  border-radius: 8px;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:ital@1&display=swap");
