@@ -1,5 +1,6 @@
 function calcular1() {
   var valor = parseFloat(document.getElementById("valor").value)
+  
   var limiteInferior = 137347.32
   var porcentagem1 = 0.015
   var porcentagem2 = 0.03

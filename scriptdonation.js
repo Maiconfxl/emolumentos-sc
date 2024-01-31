@@ -95,3 +95,8 @@ function calcularTudo() {
   document.getElementById("calcdonation3").innerHTML =
     "R$" + resultadoTotal.toFixed(2)
 }
+document.getElementById("valor").addEventListener("keyup", function (event) {
+  if (event.key === "Enter") {
+    calcularTudo()
+  }
+})
