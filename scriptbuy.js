@@ -1,6 +1,6 @@
 function calcular1() {
   var valor = parseFloat(document.getElementById("valor").value)
-  
+
   var limiteInferior = 137347.32
   var porcentagem1 = 0.015
   var porcentagem2 = 0.03
@@ -68,15 +68,27 @@ function calcular1() {
 
   // Resultado do ITBI
   document.getElementById("calculoResult").innerHTML =
-    "R$" + resultado.toFixed(2)
+    "R$" +
+    resultado.toLocaleString("pt-BR", {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
+    })
 
   // Resultado da tabela de SC
   document.getElementById("calculoResult2").innerHTML =
-    "R$" + resultado2.toFixed(2)
+    "R$" +
+    resultado2.toLocaleString("pt-BR", {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
+    })
 
   // Resultado final
   document.getElementById("calculoResult3").innerHTML =
-    "R$" + (resultado + resultado2).toFixed(2)
+    "R$" +
+    (resultado + resultado2).toLocaleString("pt-BR", {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
+    })
 }
 document.getElementById("valor").addEventListener("keyup", function (event) {
   if (event.key === "Enter") {

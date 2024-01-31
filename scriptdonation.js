@@ -19,7 +19,11 @@ function calcularITCMD() {
     resultado = (valor - 150000.0) * 0.07 + 200 + 900 + 5000
 
   document.getElementById("calcdonation").innerHTML =
-    "R$ " + resultado.toFixed(2)
+    "R$ " +
+    resultado.toLocaleString("pt-BR", {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
+    })
 }
 
 function calcularEmolumentos() {
@@ -72,7 +76,11 @@ function calcularEmolumentos() {
   } else if (valor >= 206340) resultado2 = 2600.22
 
   document.getElementById("calcdonation2").innerHTML =
-    "R$" + resultado2.toFixed(2)
+    "R$" +
+    resultado2.toLocaleString("pt-BR", {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
+    })
 }
 
 function calcularTudo() {
@@ -93,7 +101,11 @@ function calcularTudo() {
 
   // Exibe o resultado total na página
   document.getElementById("calcdonation3").innerHTML =
-    "R$" + resultadoTotal.toFixed(2)
+    "R$" +
+    resultadoTotal.toLocaleString("pt-BR", {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
+    })
 }
 document.getElementById("valor").addEventListener("keyup", function (event) {
   if (event.key === "Enter") {
