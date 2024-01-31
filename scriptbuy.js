@@ -77,3 +77,8 @@ function calcular1() {
   document.getElementById("calculoResult3").innerHTML =
     "R$" + (resultado + resultado2).toFixed(2)
 }
+document.getElementById("valor").addEventListener("keyup", function (event) {
+  if (event.key === "Enter") {
+    calcular1()
+  }
+})
