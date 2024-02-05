@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/bg.png" />
+    <title>Doação</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2125012810992891"
+     crossorigin="anonymous"></script>
+     <meta name="google-adsense-account" content="ca-pub-2125012810992891">
+  </head>
+  <body>
+    <div class="social-links">
+      <a href="./index.html"><ion-icon name="home-outline"></ion-icon></a>
+    </div>
+    <div class="top">
+      <p><h2>Doação</h2></p>
+      <div class="doc1">
+      <label for="opcaoDivisao">Selecione opção:</label>
+      <select id="opcaoDivisao">
+        <option value="naoDividir">Doação Simples</option>
+        <option value="dividir">Doação com Reserve de Usufruto</option>
+      </select>
+      </div>
+
+      <div class="tab">
+        <table>
+          <tr>
+            <th>Valor</th>
+            <th>ITCMD</th>
+            <th>Tabelionato</th>
+            <th>Total</th>
+          </tr>
+
+          <tr>
+            <td><input type="text" id="valor" /></td>
+            <td id="calcdonation"></td>
+            <td id="calcdonation2"></td>
+            <td id="calcdonation3"></td>
+          </tr>
+        </table>
+      </div>
+      <div class="boton">
+        <button onclick="calcularTudo()">Calcular</button>
+      </div>
+    </div>
+    <h4>Observação</h4>
+    <p>O valor do imposto e do cartório está definido para a cidade de São Bento do Sul-SC</p>
+    <script src="./scriptdonation.js"></script>
+     <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    </body>
+</html>

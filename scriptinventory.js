@@ -7,19 +7,23 @@ function calcularITCMD() {
     valor /= 2 // Divide por 2
   }
 
-  // cálculo do ITCMD
+  //cálculo do ITCMD
+
   if (valor >= 0 && valor <= 20000.0) {
     resultado = valor * 0.01
   } else if (valor >= 20000.01 && valor <= 50000.0) {
     resultado = (valor - 20000.0) * 0.03 + 200
   } else if (valor >= 50000.01 && valor <= 150000.0) {
     resultado = (valor - 50000.0) * 0.05 + 900 + 200
-  } else if (valor >= 150000.01) {
+  } else if (valor >= 150000.01)
     resultado = (valor - 150000.0) * 0.07 + 200 + 900 + 5000
-  }
 
   document.getElementById("calcdonation").innerHTML =
-    "R$ " + resultado.toFixed(2)
+    "R$ " +
+    resultado.toLocaleString("pt-BR", {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
+    })
 }
 
 function calcularEmolumentos() {
@@ -72,7 +76,11 @@ function calcularEmolumentos() {
   } else if (valor >= 206340) resultado2 = 2600.22
 
   document.getElementById("calcdonation2").innerHTML =
-    "R$" + resultado2.toFixed(2)
+    "R$" +
+    resultado2.toLocaleString("pt-BR", {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
+    })
 }
 
 function calcularTudo() {
@@ -82,32 +90,23 @@ function calcularTudo() {
 
   // Obtém os resultados das duas funções
   var resultadoITCMD = parseFloat(
-    document
-      .getElementById("calcdonation")
-      .innerText.replace("R$", "")
-      .replace(",", ".")
+    document.getElementById("calcdonation").innerText.replace("R$", "")
   )
   var resultadoEmolumentos = parseFloat(
-    document
-      .getElementById("calcdonation2")
-      .innerText.replace("R$", "")
-      .replace(",", ".")
+    document.getElementById("calcdonation2").innerText.replace("R$", "")
   )
 
-  // Soma os resultados sem formatar
+  // Soma os resultados
   var resultadoTotal = resultadoITCMD + resultadoEmolumentos
 
-  // Exibe o resultado total na página com o formato desejado
+  // Exibe o resultado total na página
   document.getElementById("calcdonation3").innerHTML =
     "R$" +
-    resultadoTotal
-      .toLocaleString("pt-BR", {
-        minimumFractionDigits: 2,
-        maximumFractionDigits: 2,
-      })
-      .replace(",", ".")
+    resultadoTotal.toLocaleString("pt-BR", {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
+    })
 }
-
 document.getElementById("valor").addEventListener("keyup", function (event) {
   if (event.key === "Enter") {
     calcularTudo()
