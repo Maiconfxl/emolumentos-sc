@@ -82,16 +82,10 @@ function calcularTudo() {
 
   // Obtém os resultados das duas funções
   var resultadoITCMD = parseFloat(
-    document
-      .getElementById("calcdonation")
-      .innerText.replace("R$", "")
-      .replace(",", ".")
+    document.getElementById("calcdonation").innerText.replace("R$", "")
   )
   var resultadoEmolumentos = parseFloat(
-    document
-      .getElementById("calcdonation2")
-      .innerText.replace("R$", "")
-      .replace(",", ".")
+    document.getElementById("calcdonation2").innerText.replace("R$", "")
   )
 
   // Soma os resultados sem formatar
@@ -100,12 +94,10 @@ function calcularTudo() {
   // Exibe o resultado total na página com o formato desejado
   document.getElementById("calcdonation3").innerHTML =
     "R$" +
-    resultadoTotal
-      .toLocaleString("pt-BR", {
-        minimumFractionDigits: 2,
-        maximumFractionDigits: 2,
-      })
-      .replace(",", ".")
+    resultadoTotal.toLocaleString("pt-BR", {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
+    })
 }
 
 document.getElementById("valor").addEventListener("keyup", function (event) {
