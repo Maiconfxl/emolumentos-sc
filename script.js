@@ -13,11 +13,12 @@ function redirecionarParaITCMD() {
 function redirecionarParaITBI() {
   window.location.href = "itbi.html"
 }
+function redirecionarParaInventario() {
+  window.location.href = "inventario.html"
+}
 function redirecionarParaSobre() {
   window.location.href = "sobre.html"
 }
-function redirecionarParaInventario() {
-  window.location.href = "Inventario.html"
-}
+
 
 // Adicionar na doação aliquota para linha colateral
