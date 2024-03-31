@@ -20,10 +20,7 @@ function calcularITCMD() {
 
   document.getElementById("calcdonation").innerHTML =
     "R$ " +
-    resultado.toLocaleString("pt-BR", {
-      minimumFractionDigits: 2,
-      maximumFractionDigits: 2,
-    })
+    resultado.toFixed(2)
 }
 
 function calcularEmolumentos() {
@@ -41,10 +38,7 @@ function calcularEmolumentos() {
 
   document.getElementById("calcdonation2").innerHTML =
     "R$" +
-    resultado2.toLocaleString("pt-BR", {
-      minimumFractionDigits: 2,
-      maximumFractionDigits: 2,
-    })
+    resultado2.toFixed(2)
 }
 
 function calcularTudo() {
@@ -66,10 +60,7 @@ function calcularTudo() {
   // Exibe o resultado total na página
   document.getElementById("calcdonation3").innerHTML =
     "R$" +
-    resultadoTotal.toLocaleString("pt-BR", {
-      minimumFractionDigits: 2,
-      maximumFractionDigits: 2,
-    })
+    resultadoTotal.toFixed(2)
 }
 document.getElementById("valor").addEventListener("keyup", function (event) {
   if (event.key === "Enter") {
