@@ -160,6 +160,8 @@ function calcular1() {
     resultado2 = 5690.61 // 4.455,19 + 1.012,66 + 222,76
   } else if (valor >= 2706340 && valor <= 2756399) {
     resultado2 = 3754.48 // 4.505,19 + 1.024,03 + 225,26
+  } else if (valor >= 2756340 && valor <= 2806399) {
+    resultado2 = 5818.34 // 4.555,19 + 1.035,39 + 227,76
   }
 
   // Verifica se a opção de dividir por 2 está selecionada
