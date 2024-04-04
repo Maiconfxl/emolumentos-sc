@@ -162,8 +162,7 @@ function calcular1() {
     resultado2 = 5754.47 // 4.505,19 + 1.024,03 + 225,26
   } else if (valor >= 2756340 && valor <= 2806399) {
     resultado2 = 5818.34 // 4.555,19 + 1.035,39 + 227,76
-  } // conferido até aqui
-  else if (valor >= 2806340 && valor <= 2856399) {
+  } else if (valor >= 2806340 && valor <= 2856399) {
     resultado2 = 5882.2
   } else if (valor >= 2856340 && valor <= 2906399) {
     resultado2 = 5946.07
