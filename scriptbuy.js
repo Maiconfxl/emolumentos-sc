@@ -70,17 +70,11 @@ function calcular1() {
     resultado2 = 2816.68 // 2.205,19 + 501,24 + 110,26
   } else if (valor >= 456340 && valor <= 506339) {
     resultado2 = 2880.55 // 2.255,19 + 512,60 + 112,76
-  } 
-  
-  else if (valor >= 506340 && valor <= 556339) {
+  } else if (valor >= 506340 && valor <= 556339) {
     resultado2 = 2944.41 // 2.305,19 + 523,97 + 115,26
-  } 
-  
-  else if (valor >= 5566340 && valor <= 606339) {
+  } else if (valor >= 556340 && valor <= 606339) {
     resultado2 = 3008.28 // 2.355,19 + 535,33 + 117,76
-  } 
-  
-  else if (valor >= 606340 && valor <= 656339) {
+  } else if (valor >= 606340 && valor <= 656339) {
     resultado2 = 3072.15 // 2.405,19 + 546,70 + 120,26
   } else if (valor >= 656340 && valor <= 706339) {
     resultado2 = 3136.01 // 2.455,19 + 558,06 + 122,76
