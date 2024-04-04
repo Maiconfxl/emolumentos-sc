@@ -173,7 +173,21 @@ function calcular1() {
     resultado2 = 6073.8
   } else if (valor >= 3006340 && valor <= 3056399) {
     resultado2 = 6137.66
-  }
+  } else if (valor >= 3056340 && valor <= 3106399) {
+    resultado2 = 6201.53
+  } else if (valor >= 3106340 && valor <= 3156399) {
+    resultado2 = 6265.39
+  } else if (valor >= 3156340 && valor <= 3206399) {
+    resultado2 = 6329.26
+  } else if (valor >= 3206340 && valor <= 3256399) {
+    resultado2 = 6393.12
+  } else if (valor >= 3256340 && valor <= 3306399) {
+    resultado2 = 6456.99
+  } else if (valor >= 3306340 && valor <= 3356399) {
+    resultado2 = 6520.85
+  } else if (valor >= 3356340 && valor <= 3406399) {
+    resultado2 = 6584.72
+  } else if (valor >= 3406340) resultado2 = 6641.18
 
   // Verifica se a opção de dividir por 2 está selecionada
   var opcaoSelecionada = document.getElementById("opcaoDivisao").value
