@@ -97,9 +97,9 @@ function calcular1() {
   } else if (valor >= 1106340 && valor <= 1156339) {
     resultado2 = 3710.8 // 2.905,19 + 660,35 + 145,26
   } else if (valor >= 1156340 && valor <= 1206339) {
-    resultado2 = 3774.09 //2955,19 + 671,14 + 147,76
+    resultado2 = 3774.66 //2955,19 + 671,71 + 147,75
   } else if (valor >= 1206340 && valor <= 1256339) {
-    resultado2 = 3808.53 // 3.005,19 + 683,08 + 150,26
+    resultado2 = 3838.52 // 3.005,19 + 683,07 + 150,26
   } else if (valor >= 1256340 && valor <= 1306339) {
     resultado2 = 3902.39 // 3.055,19 + 694,44 + 152,76
   } else if (valor >= 1306340 && valor <= 1356339) {
@@ -109,13 +109,13 @@ function calcular1() {
   } else if (valor >= 1406340 && valor <= 1456339) {
     resultado2 = 4093.99 //3.205,19 + 728,54 + 160,26
   } else if (valor >= 1456340 && valor <= 1506339) {
-    resultado2 = 4157.65 //3.255,19 + 739,70 + 162,76
+    resultado2 = 4157.85 //3.255,19 + 739,90 + 162,76
   } else if (valor >= 1506340 && valor <= 1556339) {
     resultado2 = 4221.72 // 3.305,19 + 751,27 + 165,26
   } else if (valor >= 1556340 && valor <= 1606339) {
     resultado2 = 4285.58 // 3.355,19 + 762,63 + 167,76
   } else if (valor >= 1606340 && valor <= 1656339) {
-    resultado2 = 4319.45 // 3.405,19 + 774,00 + 170,26
+    resultado2 = 4349.44 // 3.405,19 + 773,99 + 170,26
   } else if (valor >= 1656340 && valor <= 1706339) {
     resultado2 = 4413.31 // 3.455,19 + 785,36 + 172,76
   } else if (valor >= 1706340 && valor <= 1756339) {
@@ -149,19 +149,30 @@ function calcular1() {
   } else if (valor >= 2406340 && valor <= 2456399) {
     resultado2 = 5371.29 // 4.205,19 + 955,84 + 210,26
   } else if (valor >= 2456340 && valor <= 2506399) {
-    resultado2 = 5439.15 // 4.255,19 + 967,20 + 212,76
+    resultado2 = 5435.15 // 4.255,19 + 967,20 + 212,76
   } else if (valor >= 2506340 && valor <= 2556399) {
     resultado2 = 5499.02 // 4.305,19 + 978,57 + 215,26
   } else if (valor >= 2556340 && valor <= 2606399) {
     resultado2 = 5562.88 // 4.355,19 + 989,93 + 217,76
   } else if (valor >= 2606340 && valor <= 2656399) {
-    resultado2 = 5726.75 // 4.405,19 + 1.101,30 + 220,26
+    resultado2 = 5626.74 // 4.405,19 + 1.101,30 + 220,26
   } else if (valor >= 2656340 && valor <= 2706399) {
     resultado2 = 5690.61 // 4.455,19 + 1.012,66 + 222,76
   } else if (valor >= 2706340 && valor <= 2756399) {
-    resultado2 = 3754.48 // 4.505,19 + 1.024,03 + 225,26
+    resultado2 = 5754.47 // 4.505,19 + 1.024,03 + 225,26
   } else if (valor >= 2756340 && valor <= 2806399) {
     resultado2 = 5818.34 // 4.555,19 + 1.035,39 + 227,76
+  } // conferido até aqui
+  else if (valor >= 2806340 && valor <= 2856399) {
+    resultado2 = 5882.2
+  } else if (valor >= 2856340 && valor <= 2906399) {
+    resultado2 = 5946.07
+  } else if (valor >= 2906340 && valor <= 2956399) {
+    resultado2 = 6009.93
+  } else if (valor >= 2956340 && valor <= 3006399) {
+    resultado2 = 6073.8
+  } else if (valor >= 3006340 && valor <= 3056399) {
+    resultado2 = 6137.66
   }
 
   // Verifica se a opção de dividir por 2 está selecionada
